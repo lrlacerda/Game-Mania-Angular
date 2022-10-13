@@ -25,7 +25,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+              "src/assets/js/jquery.js",
+              "src/assets/js/script.js"
+
+            ]
           },
           "configurations": {
             "production": {

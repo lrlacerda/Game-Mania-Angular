@@ -2,302 +2,455 @@
 
 header {
 
-display: inline-block;
-width: 100%;
-font-family: 'Kanit', sans-serif;
-background-color: #000000;
-padding: 30px 0;
-
-}
-
-
-.caixa {
-
-  justify-content: space-around;
-  position: relative;
-	width: 940px;
-	margin: 0 auto;
-  top: -200px;
-
-}
-
-nav {
-
-	position: absolute;
-	top: 100px;
-	right: 250px;
-
-}
-
-nav li {
-
-	display: inline;
-	margin: 0 0 0 15px;
-
-}
-
-nav a {
-
-  text-transform: uppercase;
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 15px;
-	text-decoration: none;
-
-}
-
-nav a:hover {
-
-  color: #9fadca;
-
-}
-
-.logo2 {
-
-  position: absolute;
-	top: 100px;
-	right: 0;
-  top: 0;
-  width: 250px;
-
-}
-
-
-
-
-
-
-
-
-main {
-
-  margin-top: 70px;
-
-}
-
-.carousel-item p {
-
-  font-size: 40px;
-  font-weight: bold;
-
-}
-
-.carousel-item h5 {
-
-  font-size: 60px;
-  font-weight: bold;
-
-}
-
-
-
-
-
-
-
-
-div.gallery {
-
-  border: 3px solid #ccc;
-  border-radius: 15px;
-  padding: 10px;
-
-}
-
-div.gallery:hover {
-
-  border: 3px solid #777;
-
-}
-
-
-div.gallery img {
-
+  display: inline-block;
   width: 100%;
-  height: auto;
-  border-radius: 15px;
-
-}
-
-
-div.desc {
-
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-
-  padding: 60px 6px;
-  float: left;
-  width: 24.99999%;
-
-
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-
-  content: "";
-  display: table;
-  clear: both;
-
-}
-
-
-
-
-
-
-
-.ofertas {
-
-  background-color: white;
-  padding-top: 30px;
-  margin: 2em 0;
-
-}
-
-.ofertas h2 {
-
-  color: #fff;
-  font-size: 27px;
-
-}
-
-.espaco-produtos {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-  border-radius: 20px;
-
-}
-
-.cardnews{
-
-  width: 15em;
-  height: 22.5em;
-  /* background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 80%); */
-  color: #000000;
-  margin-bottom: 2em;
-  box-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 30px rgb(0, 0, 0);
-
-}
-
-.cardnews {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.cardnews img {
-
-  width: 100%;
-
-}
-
-.texto-card {
-
-  width: 85%;
-  height: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-}
-
-.texto-card h3, .texto-card p {
-  margin: 0;
-
-}
-
-.cardnews h3 {
-
-  font-size: 24px;
-  font-weight: 600;
-
-}
-
-.cardnews a {
-
-  width: 100%;
-  height: 35px;
-  text-align: center;
-  line-height: 2;
-
+  font-family: 'Kanit', sans-serif;
   background-color: #000000;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: 1s;
+  padding: 30px 0;
 
-}
-
-.cardnews a:hover {
-
-  background: #434141;
-  cursor: pointer;
-  transform: scale(1.1);
-  color: white;
-
-}
+  }
 
 
+  .caixa {
+
+    justify-content: space-around;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    top: -200px;
+
+  }
+
+  nav {
+
+    position: absolute;
+    top: 100px;
+    right: 250px;
+
+  }
+
+  nav li {
+
+    display: inline;
+    margin: 0 0 0 15px;
+
+  }
+
+  nav a {
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+
+  }
+
+  nav a:hover {
+
+    color: #9fadca;
+
+  }
+
+  .logo2 {
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+    top: 0;
+    width: 250px;
+
+  }
 
 
 
 
 
 
-.icones {
 
-  padding: 1em;
-  margin: 3em 0;
 
-}
+  main {
 
-.icones-img {
+    margin-top: 70px;
 
-  margin: 0 70px 0 70px;
+  }
 
-}
+  .carousel-item p {
 
-.img-icones {
+    font-size: 40px;
+    font-weight: bold;
 
-  box-shadow: 10px 10px 5px 10px #000000, -10px -10px #777;
-  border-radius: 20px;
+  }
 
-}
+  .carousel-item h5 {
 
-  .img-icones:hover {
+    font-size: 60px;
+    font-weight: bold;
+
+  }
+
+
+
+
+
+
+
+
+  div.gallery {
+
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+
+  }
+
+  div.gallery:hover {
+
+    border: 3px solid #777;
+
+  }
+
+
+  div.gallery img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+  }
+
+
+  div.desc {
+
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+
+    padding: 60px 6px;
+    float: left;
+    width: 24.99999%;
+
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+
+
+
+
+
+
+  .ofertas {
+
+    background-color: white;
+    padding-top: 30px;
+    margin: 2em 0;
+
+  }
+
+  .ofertas h2 {
+
+    color: #fff;
+    font-size: 27px;
+
+  }
+
+  .espaco-produtos {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 20px;
+
+  }
+
+  .cardnews{
+
+    width: 15em;
+    height: 22.5em;
+    /* background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 80%); */
+    color: #000000;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 30px rgb(0, 0, 0);
+
+  }
+
+  .cardnews {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .cardnews img {
+
+    width: 100%;
+
+  }
+
+  .texto-card {
+
+    width: 85%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .texto-card h3, .texto-card p {
+    margin: 0;
+
+  }
+
+  .cardnews h3 {
+
+    font-size: 24px;
+    font-weight: 600;
+
+  }
+
+  .cardnews a {
+
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    line-height: 2;
+
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+
+  }
+
+  .cardnews a:hover {
+
+    background: #434141;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+
+  }
+
+
+
+
+
+
+
+
+  .icones {
+
+    padding: 1em;
+    margin: 3em 0;
+
+  }
+
+  .icones-img {
+
+    margin: 0 70px 0 70px;
+
+  }
+
+  .img-icones {
+
+    box-shadow: 10px 10px 5px 10px #000000, -10px -10px #777;
+    border-radius: 20px;
+
+  }
+
+    .img-icones:hover {
+
+      transform: scale(1.2);
+      cursor: pointer;
+      opacity: 0.6;
+
+    }
+
+
+
+    .jogos-lancamentos {
+
+
+      text-align: center;
+      font-weight: bold;
+      font-size: 60px;
+      font-style: oblique;
+
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: rgb(159, 149, 149);
+      font-size: 3em; color: #000000;
+
+    }
+
+
+    .videos {
+
+      background-image: url(src\assets\img\psfundo.jpg);
+      display: flex;
+      margin: 3em 0;
+
+    }
+
+    .video1 {
+
+      width: 720px;
+      margin: 2em 0 2em 0;
+      padding: 2em;
+
+      float:left;
+
+
+  }
+
+    .video2 {
+
+      width: 720px;
+      margin: 2em 0 0 2em;
+      padding: 2em;
+
+      float:right;
+
+
+    }
+
+
+
+
+
+
+  .console-pc {
+
+    padding: 2em 0;
+
+  }
+
+  .conteudo-venda {
+
+    width: 100%px;
+    margin: 0 auto;
+
+  }
+
+  .conteudo-lista {
+
+    width: 100%;
+    display: inline-flex;
+    vertical-align: baseline;
+    background: #1d386c;
+    padding: 50px;
+    justify-content: center;
+
+  }
+
+  .itens p {
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+
+  }
+
+
+  .itens {
+
+    line-height: 1.5;
+
+  }
+
+  .imagem-beneficios {
+
+    height: 250px;
+    float: right;
+    width: 300px;
+    margin: 0 0 0 200px;
+    opacity: 1; /*opacidade do elemento, vai de 1 a 0*/
+    box-shadow: 10px 10px 5px 10px #000000, -10px -10px #777;
+    border-radius: 20px;
+
+  }
+
+  .imagem-beneficios:hover {
+
+    opacity: 0.6;
+    cursor: pointer;
+
+  }
+
+
+
+
+
+
+
+  .siga-nos {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4em 0 4em 0;
+    padding: 7em;
+    background: #1d386c;
+
+  }
+
+  .siga-nos h2 {
+
+    font-size: 33px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-style: inherit;
+
+  }
+
+  .siga-nos img {
+
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+
+  }
+
+  .siga-nos img:hover {
 
     transform: scale(1.2);
     cursor: pointer;
@@ -307,185 +460,23 @@ div.desc {
 
 
 
-  .jogos-lancamentos {
 
 
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    font-style: oblique;
+  .mapa {
 
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(159, 149, 149);
-    font-size: 3em; color: #000000;
-
-  }
-
-
-  .videos {
-
-    /* background-image: url(../img/psfundo.jpg); */
-    display: flex;
-    margin: 3em 0;
-
-  }
-
-  .video1 {
-
-    width: 720px;
-    margin: 2em 0 2em 0;
-    padding: 2em;
-
-    float:left;
-
-
-}
-
-  .video2 {
-
-    width: 720px;
-    margin: 2em 0 0 2em;
-    padding: 2em;
-
-    float:right;
+    padding: 1em 0;
 
 
   }
 
+  .mapa-conteudo {
 
+    width: 940px;
+    margin: 0 auto;
 
+  }
 
-
-
-.console-pc {
-
-  padding: 2em 0;
-
-}
-
-.conteudo-venda {
-
-  width: 100%px;
-  margin: 0 auto;
-
-}
-
-.conteudo-lista {
-
-  width: 100%;
-  display: inline-flex;
-  vertical-align: baseline;
-  background: #1d386c;
-  padding: 50px;
-  justify-content: center;
-
-}
-
-.itens p {
-
-  font-size: 25px;
-  font-weight: bold;
-  color: #FFFFFF;
-  display: block;
-
-}
-
-
-.itens {
-
-  line-height: 1.5;
-
-}
-
-.imagem-beneficios {
-
-  height: 250px;
-  float: right;
-	width: 300px;
-  margin: 0 0 0 200px;
-	opacity: 1; /*opacidade do elemento, vai de 1 a 0*/
-	box-shadow: 10px 10px 5px 10px #000000, -10px -10px #777;
-  border-radius: 20px;
-
-}
-
-.imagem-beneficios:hover {
-
-  opacity: 0.6;
-  cursor: pointer;
-
-}
-
-
-
-
-
-
-
-.siga-nos {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 4em 0 4em 0;
-  padding: 7em;
-  background: #1d386c;
-
-}
-
-.siga-nos h2 {
-
-  font-size: 33px;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-style: inherit;
-
-}
-
-.siga-nos img {
-
-width: 60px;
-height: 60px;
-border-radius: 20%;
-
-}
-
-.siga-nos img:hover {
-
-  transform: scale(1.2);
-  cursor: pointer;
-  opacity: 0.6;
-
-}
-
-
-
-
-
-.mapa {
-
-  padding: 1em 0;
-
-
-}
-
-.mapa-conteudo {
-
-  width: 940px;
-  margin: 0 auto;
-
-}
-
-.mapa p {
-
-  margin: 0 0 1em;
-  text-align: center;
-  font-size: 1em;
-  font-family: 'Kanit', sans-serif;
-
-}
-
-  .mapa h3 {
+  .mapa p {
 
     margin: 0 0 1em;
     text-align: center;
@@ -494,122 +485,131 @@ border-radius: 20%;
 
   }
 
+    .mapa h3 {
+
+      margin: 0 0 1em;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Kanit', sans-serif;
+
+    }
 
 
 
 
 
 
-footer {
 
-  /* background: linear-gradient(#FEFEFE, #000000); pode ser colocada a inclinação também das cores e a porcentagem que queremos das cores */
-  /* background-image: url(../imagens/bg.jpg); */
-  padding: 40px 0;
-  background-color: #000000;
-  margin-top: 70px;
+  footer {
 
-}
+    /* background: linear-gradient(#FEFEFE, #000000); pode ser colocada a inclinação também das cores e a porcentagem que queremos das cores */
+    /* background-image: url(../imagens/bg.jpg); */
+    padding: 40px 0;
+    background-color: #000000;
+    margin-top: 70px;
 
-
-.copyright {
-
-  font-size: 25px;
-  color: white;
-  margin: 20px 0 0;
-  text-align: center;
-
-}
+  }
 
 
-  .rodape {
+  .copyright {
 
-    padding: 35px 0;
-    display: flex;
-    justify-content: space-between;
+    font-size: 25px;
     color: white;
+    margin: 20px 0 0;
+    text-align: center;
 
-}
+  }
 
-.links-footer {
 
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
+    .rodape {
 
-}
+      padding: 35px 0;
+      display: flex;
+      justify-content: space-between;
+      color: white;
 
-.links-footer a {
+  }
 
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Kanit', sans-serif;
+  .links-footer {
 
-}
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
 
-.links-footer a:hover {
+  }
 
-    color: #9fadca;
+  .links-footer a {
 
-}
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+      font-family: 'Kanit', sans-serif;
 
-.sociais {
+  }
 
-    width: 31%;
+  .links-footer a:hover {
 
-}
+      color: #9fadca;
 
-.sociais p {
+  }
 
-    font-family: 'Titillium Web';
+  .sociais {
 
-}
+      width: 31%;
 
-.sociais form {
+  }
 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  .sociais p {
 
-}
+      font-family: 'Titillium Web';
 
-.sociais input[type="email"]{
+  }
 
-    height: 37px;
-    width: 65%;
-    border-radius: 0px;
-    border-style: none;
-    text-indent: 5px;
+  .sociais form {
 
-}
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
 
-.sociais input[type="email"]::placeholder {
+  }
 
-    color: #B8B3B3;
-    font-weight: bold;
+  .sociais input[type="email"]{
 
-}
+      height: 37px;
+      width: 65%;
+      border-radius: 0px;
+      border-style: none;
+      text-indent: 5px;
 
-.sociais button{
+  }
 
-    width: 35%;
-    color: white;
-    background-color: #514d4d;
-    border: none;
-    font-family: 'Titillium Web';
-    font-weight: 600;
+  .sociais input[type="email"]::placeholder {
 
-}
+      color: #B8B3B3;
+      font-weight: bold;
 
-.sociais button:hover {
+  }
 
-  background: #434141;
-    cursor: pointer;
-    transform: scale(1.1);
-    color: white;
+  .sociais button{
 
-}
+      width: 35%;
+      color: white;
+      background-color: #514d4d;
+      border: none;
+      font-family: 'Titillium Web';
+      font-weight: 600;
+
+  }
+
+  .sociais button:hover {
+
+    background: #434141;
+      cursor: pointer;
+      transform: scale(1.1);
+      color: white;
+
+  }
 
 
 
