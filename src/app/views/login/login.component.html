@@ -1,22 +1,24 @@
 <body>
 
+  <form (ngSubmit)="receberDados()">
 
-  <div class="login">
-      <div class="campo-email">
-          <label>E-mail :</label>
-          <input type="email" placeholder="Ex: email@email.com">
-      </div>
-      <div class="campo-senha">
-          <label>Senha :</label>
-          <input type="password" placeholder="Digite sua senha">
-      </div>
+    <div class="login">
 
-      <button class="botao-enviar">Enviar</button>
-  </div>
+        <div class="campo-email">
+            <label>E-mail :</label>
+            <input type="email" id="email" placeholder="Ex: email@email.com" [(ngModel)]="userModel.email">
+        </div>
+        <div class="campo-senha">
+            <label>Senha :</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" [(ngModel)]="userModel.password">
+        </div>
 
+        <button class="botao-enviar">Enviar</button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <script src="bootstrap-dist/bootstrap-5.2.1-dist/js/bootstrap.js"></script>
+    </div>
+
+  </form>
+
 
 </body>
 

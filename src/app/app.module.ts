@@ -8,6 +8,7 @@ import { LoginComponent } from './views/login/login.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -19,10 +20,13 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     FooterComponent,
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
