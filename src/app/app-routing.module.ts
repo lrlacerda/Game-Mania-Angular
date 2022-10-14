@@ -7,8 +7,8 @@ import { ContatoComponent } from './views/contato/contato.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent },
-  {path:"", component: LoginComponent},
-  {path:"", component: ContatoComponent},
+  {path:"login", component: LoginComponent},
+  {path:"contato", component: ContatoComponent},
 ]
 
 @NgModule({
