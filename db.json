@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "email": "lribeirolacerda@gmail.comr",
+      "password": "$2a$10$vkyGaZ3jJFLKFU0PtsWT0ej5TqaPhpRrlKkQOEhbsPpK9ZjAYRqP6",
+      "id": 1
+    },
+    {
+      "email": "lrlacerda@bol.com.br",
+      "password": "$2a$10$ODww3xaBvEbesho1Gi1BF.YmXUWxAOvhjMNoMirrnHOleyrLnb5Qi",
+      "id": 2
+    },
+    {
+      "email": "silviarlacerda@hotmail.com",
+      "password": "$2a$10$2MygjJ0UGU3b5pJWHXg3o.Ur01dXZCZr21RabReRP/EgdtZzMUO1C",
+      "Nome": "Silvia Lacerda",
+      "id": 3
+    }
+  ]
+}

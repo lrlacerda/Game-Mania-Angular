@@ -19,8 +19,7 @@ export class LoginComponent implements OnInit {
   receberDados() {
 
     console.log(this.userModel)
-    alert(this.userModel.email)
-    alert(this.userModel.password)
+
   }
 
 }
