@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.LoginService.login(this.userModel).subscribe((Response) => {
       console.log("Deu Certo")
       localStorage.setItem("nomeUsuario", Response.body.user.nome)
-      // this.router.navigateByUrl("/")
+      this.router.navigateByUrl("/")
     }, (respostaErro) => {
       console.log("Deu Erro")
       this.mensagem = respostaErro.error
