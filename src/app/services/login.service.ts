@@ -1,14 +1,21 @@
-import { HttpClient } from 'module';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from '../model/user';
 
 @Injectable({
-  providedIn: 'root'
+providedIn: 'root'
 })
 export class LoginService {
 
-  constructor(private httpClient: HttpClient) { }
+constructor(private httpClient: HttpClient) { }
 
-  url = "http://localhost:3000/login"
+url = "http://localhost:3000/login"
 
-  login(usuario: User)
+login(usuario: User): Observable<any>{
+return this.httpClient.post(this.url, JSON.stringify(usuario), {
+headers: new HttpHeaders({'Content-Type': 'application/json'}),
+observe:"response"
+})
+}
 }

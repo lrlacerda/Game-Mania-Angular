@@ -15,6 +15,11 @@
       "password": "$2a$10$2MygjJ0UGU3b5pJWHXg3o.Ur01dXZCZr21RabReRP/EgdtZzMUO1C",
       "Nome": "Silvia Lacerda",
       "id": 3
+    },
+    {
+      "email": "lribeirolacerda@gmail.com",
+      "password": "$2a$10$jKoP6Zf./Day4.OJusgrvu745bxujKHHzd4zZzuI5kkyDt7C1UpOG",
+      "id": 4
     }
   ]
 }
