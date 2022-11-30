@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     const listaPalavras: string[] = ["select ", "from ", "drop ", "or", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
 
     listaPalavras.forEach(palavra => {
-      if(this.userModel.email.toLowerCase().includes(palavra)) {
+      if(this.userModel.email?.toLowerCase().includes(palavra)) {
         this.mensagem = "Dados inválidos"
 
         return;
