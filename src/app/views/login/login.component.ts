@@ -1,7 +1,7 @@
 import { LoginService } from './../../services/login.service';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/model/user';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     const listaPalavras: string[] = ["select ", "from ", "drop ", "or", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
 
     listaPalavras.forEach(palavra => {
-      if(this.userModel.email?.toLowerCase().includes(palavra)) {
+      if (this.userModel.email?.toLowerCase().includes(palavra)) {
         this.mensagem = "Dados inválidos"
 
         return;
@@ -37,9 +37,10 @@ export class LoginComponent implements OnInit {
     });
 
     this.LoginService.login(this.userModel).subscribe((Response) => {
-      console.log("Deu Certo")
+      console.log("Logando...")
       localStorage.setItem("nomeUsuario", Response.body.user.nome)
       this.router.navigateByUrl("/")
+
     }, (respostaErro) => {
       console.log("Deu Erro")
       this.mensagem = respostaErro.error
